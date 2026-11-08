@@ -3,82 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Your Name</title>
-    <!-- Tailwind CSS for rapid styling -->
+    <title>Liana | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
     
     <!-- Navigation -->
-    <header class="bg-white shadow fixed w-full z-50">
-        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-blue-600">Portfolio.</a>
-            <nav class="space-x-4">
-                <a href="#about" class="hover:text-blue-600">About</a>
-                <a href="#projects" class="hover:text-blue-600">Projects</a>
-                <a href="#contact" class="hover:text-blue-600">Contact</a>
+    <header class="bg-white/80 backdrop-blur-md shadow-sm fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold text-indigo-600 tracking-tight">Liana.</a>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-40 pb-20 px-6 max-w-5xl mx-auto text-center">
-        <h1 class="text-5xl font-extrabold mb-4">Hi, I'm <span class="text-blue-600">Your Name</span></h1>
-        <p class="text-xl text-gray-600 mb-8">A passionate developer and designer building modern web experiences.</p>
-        <a href="#projects" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition">View My Work</a>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6">About Me</h2>
-            <p class="text-gray-600 leading-relaxed">
-                I specialize in creating interactive and responsive websites. With a passion for clean code and intuitive design, I bridge the gap between functionality and aesthetics. When I'm not coding, I'm learning new technologies or contributing to open-source projects.
-            </p>
+    <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto flex flex-col items-center text-center">
+        <div class="inline-block mb-4 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-600 font-semibold text-sm">
+            Available for new opportunities
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-slate-900 tracking-tight">
+            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">Liana</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-600 mb-10 max-w-2xl leading-relaxed">
+            Cloud & DevOps Engineer building scalable microservices, secure Linux environments, and AI-driven computer vision solutions.
+        </p>
+        <div class="flex space-x-4">
+            <a href="#projects" class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-700 shadow-lg shadow-indigo-200 transition transform hover:-translate-y-0.5">View Projects</a>
+            <a href="https://github.com/liyanazaib" target="_blank" class="bg-white text-slate-700 border border-slate-200 px-8 py-3 rounded-lg font-semibold hover:bg-slate-50 transition flex items-center gap-2">
+                <i class="fab fa-github"></i> GitHub
+            </a>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-gray-100">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-10">Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1 -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="h-48 bg-gray-300 flex items-center justify-center text-gray-500">Project Image Placeholder</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">E-Commerce App</h3>
-                        <p class="text-gray-600 mb-4">A full-stack online store with user authentication and payment processing.</p>
-                        <span class="inline-block bg-gray-200 text-sm px-3 py-1 rounded-full text-gray-700">React</span>
-                        <span class="inline-block bg-gray-200 text-sm px-3 py-1 rounded-full text-gray-700">Node.js</span>
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-slate-900">Technical Arsenal</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- DevOps & Cloud -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fas fa-cloud"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Cloud & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Docker</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Kubernetes / Minikube</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Microsoft Azure</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Linux System Admin</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Bash Scripting</span>
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="bg-white rounded-lg shadow overflow-hidden">
-                    <div class="h-48 bg-gray-300 flex items-center justify-center text-gray-500">Project Image Placeholder</div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2">Task Dashboard</h3>
-                        <p class="text-gray-600 mb-4">A productivity tool for managing daily tasks and collaborating with teams.</p>
-                        <span class="inline-block bg-gray-200 text-sm px-3 py-1 rounded-full text-gray-700">Vue</span>
-                        <span class="inline-block bg-gray-200 text-sm px-3 py-1 rounded-full text-gray-700">Tailwind</span>
+                <!-- Backend & DB -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div class="w-12 h-12 bg-cyan-100 text-cyan-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fas fa-server"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Backend & APIs</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Python</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">FastAPI</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">PostgreSQL</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Java</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Git</span>
+                    </div>
+                </div>
+                <!-- AI & Analytics -->
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center text-xl mb-4"><i class="fas fa-brain"></i></div>
+                    <h3 class="text-xl font-bold mb-4">Machine Learning</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Computer Vision</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">OpenCV</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">Deep Learning</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">NLP</span>
+                        <span class="bg-white border border-slate-200 px-3 py-1 rounded-md text-sm font-medium">R Programming</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-2 text-center text-slate-900">Featured Projects</h2>
+            <p class="text-center text-slate-500 mb-12">To add more projects, just copy and paste a project card in the code.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900">Microservices Architecture</h3>
+                        <p class="text-slate-600 mb-6 line-clamp-3">A containerized microservices application developed and deployed locally. Handled database integration and cluster orchestration to ensure scalable, isolated services.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-bold px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">FastAPI</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">PostgreSQL</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">Docker</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-indigo-50 text-indigo-600 rounded-full">Minikube</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900">Head Pose Estimation AI</h3>
+                        <p class="text-slate-600 mb-6 line-clamp-3">A computer vision model designed to accurately estimate head orientation in real-time. Leveraged high-resolution networking techniques for precise spatial recognition.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-bold px-3 py-1 bg-cyan-50 text-cyan-600 rounded-full">Python</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-cyan-50 text-cyan-600 rounded-full">OpenCV</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-cyan-50 text-cyan-600 rounded-full">HRNet</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-cyan-50 text-cyan-600 rounded-full">L2CS-Net</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900">The Aegis Lens Concept</h3>
+                        <p class="text-slate-600 mb-6 line-clamp-3">A futuristic product pitch developed for a tech competition. Conceptualized a camera system featuring privacy-focused dignity protection AI.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-bold px-3 py-1 bg-purple-50 text-purple-600 rounded-full">Product Pitch</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-purple-50 text-purple-600 rounded-full">AI Ethics</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-purple-50 text-purple-600 rounded-full">System Design</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg transition duration-300">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-3 text-slate-900">Gesture-Controlled AR System</h3>
+                        <p class="text-slate-600 mb-6 line-clamp-3">Designed and presented an academic seminar on integrating hand-gesture controls with augmented reality feedback mechanisms for hands-free interactions.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full">Augmented Reality</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full">IoT</span>
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-50 text-emerald-600 rounded-full">HCI</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white text-center">
-        <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
-            <p class="text-gray-600 mb-8">Currently open for new opportunities. Let's build something amazing together.</p>
-            <a href="mailto:hello@example.com" class="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">Email Me</a>
+    <section id="contact" class="py-24 bg-white text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6 text-slate-900">Let's Connect</h2>
+            <p class="text-xl text-slate-600 mb-10">Whether you want to discuss a DevOps project, talk about Machine Learning, or just say hi, my inbox is open.</p>
+            <a href="mailto:your.email@example.com" class="inline-block bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition shadow-lg">
+                Say Hello
+            </a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 text-center py-6">
-        <p>&copy; 2026 Your Name. Built with AI & Hosted on GitHub.</p>
+    <footer class="bg-slate-900 text-slate-400 py-10 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="https://github.com/liyanazaib" class="hover:text-white text-2xl transition"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/" class="hover:text-white text-2xl transition"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p>&copy; 2026 Liana. Built with HTML & Tailwind. Hosted on GitHub.</p>
     </footer>
 
 </body>
